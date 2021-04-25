@@ -1,6 +1,10 @@
 require('dotenv').config();
 
 
+//1 Install and Set Up Mongoose
+let uri = "mongodb+srv://raymondkei:root1998@cluster0.8tl0p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
 let Person;
 
 const createAndSavePerson = (done) => {
